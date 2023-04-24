@@ -6,8 +6,9 @@ folders = ['China_Drone', 'China_MotorBike', 'Czech', 'India', 'Japan', 'United_
 
 for folder in folders:
     # specify the source and destination folders
-    source_folder = f"../datasets/RDD2022_released_through_CRDDC2022/RDD2022/{folder}/{folder}/train/labels"
-    dest_folder   = f"../datasets/RDD2022_released_through_CRDDC2022/RDD2022/{folder}/{folder}/val/labels"
+    source_folder = f"../datasets/RDD2022_released_through_CRDDC2022/RDD2022/{folder}/{folder}/train/images"
+    dest_folder   = f"../datasets/RDD2022_released_through_CRDDC2022/RDD2022/{folder}/{folder}/val/images"
+    os.makedirs(dest_folder) 
 
     # get a list of files in the source folder
     files = os.listdir(source_folder)

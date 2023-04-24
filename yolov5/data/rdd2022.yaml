@@ -19,7 +19,7 @@ train:
   - United_States/United_States/train/images
 val:
   - Norway/Norway/val/images
-  - Chinda_Drone/Chinda_Drone/val/images
+  - China_Drone/China_Drone/val/images
   - China_MotorBike/China_MotorBike/val/images
   - Czech/Czech/val/images
   - India/India/val/images
@@ -29,7 +29,15 @@ test:  # test images (optional)
 
 # Classes
 names:
-  0: D00
-  1: D10
+  0: D10
+  1: D00
   2: D20
-  3: D40
+  3: Repair
+  4: D40
+  5: Block crack
+  6: D44
+  7: D01
+  8: D11
+  9: D50
+  10: D43
+  11: D0w0
