@@ -1,3 +1,9 @@
+#
+# Script gathered from
+# https://towardsdatascience.com/convert-pascal-voc-xml-to-yolo-for-object-detection-f969811ccba5
+# and modified to fit this dataset
+#
+
 import xml.etree.ElementTree as ET
 import glob
 import os

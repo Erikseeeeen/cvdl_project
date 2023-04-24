@@ -1,4 +1,12 @@
 #!/usr/bin/python
+
+
+#
+# Script gathered from
+# https://github.com/WolfgangFahl/play-chess-with-a-webcam
+# and modified to fit this project
+#
+
 # -*- encoding: utf-8 -*-
 # see https://www.pyimagesearch.com/2014/08/25/4-point-opencv-getperspective-transform-example/
 # part of https://github.com/WolfgangFahl/play-chess-with-a-webcam
