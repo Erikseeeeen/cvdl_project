@@ -4,6 +4,7 @@ yolov5/*
 yolov5/data/*
 !yolov5/data/rdd2022.yaml
 !yolov5/data/rdd2022norway.yaml
+!yolov5/data/rdd2022norwaycropped.yaml
 !yolov5/data/hyps
 yolov5/data/hyps/*
 !yolov5/data/hyps/hyp.cracks.yaml

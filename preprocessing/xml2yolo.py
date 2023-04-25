@@ -30,12 +30,14 @@ def yolo_to_xml_bbox(bbox, w, h):
     return [xmin, ymin, xmax, ymax]
 
 
-classes = []
-folders = ['China_Drone', 'China_MotorBike', 'Czech', 'India', 'Japan', 'United_States']
+classes = ["D10", "Repair", "D00", "D20", "D40", "Block crack", "D44", "D01", "D50", "D11", "D43", "D0w0"]
+# folders = ['China_Drone', 'Norway', 'China_MotorBike', 'Czech', 'India', 'Japan', 'United_States']
+folders = ['Norway_Cropped']
+
 for folder in folders:
-    input_dir = f"../datasets/RDD2022_released_through_CRDDC2022/RDD2022/{folder}/{folder}/train/annotations/xmls/"
-    output_dir = f"../datasets/RDD2022_released_through_CRDDC2022/RDD2022/{folder}/{folder}/train/labels/"
-    image_dir = f"../datasets/RDD2022_released_through_CRDDC2022/RDD2022/{folder}/{folder}/train/images/"
+    input_dir = f"../datasets/RDD2022/{folder}/train/annotations/xmls/"
+    output_dir = f"../datasets/RDD2022/{folder}/train/labels/"
+    image_dir = f"../datasets/RDD2022/{folder}/train/images/"
 
     # create the labels folder (output directory)
     os.mkdir(output_dir)
