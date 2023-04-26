@@ -30,9 +30,9 @@ def yolo_to_xml_bbox(bbox, w, h):
     return [xmin, ymin, xmax, ymax]
 
 
-classes = ["D10", "Repair", "D00", "D20", "D40", "Block crack", "D44", "D01", "D50", "D11", "D43", "D0w0"]
+classes = []#["D10", "Repair", "D00", "D20", "D40", "Block crack", "D44", "D01", "D50", "D11", "D43", "D0w0"]
 # folders = ['China_Drone', 'Norway', 'China_MotorBike', 'Czech', 'India', 'Japan', 'United_States']
-folders = ['Norway_Cropped']
+folders = ['Norway']
 
 for folder in folders:
     input_dir = f"../datasets/RDD2022/{folder}/train/annotations/xmls/"

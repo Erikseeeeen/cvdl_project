@@ -15,15 +15,7 @@ test:  # test images (optional)
 
 # Classes
 names:
-  0: D10
-  1: D00
-  2: D20
-  3: Repair
-  4: D40
-  5: Block crack
-  6: D44
-  7: D01
-  8: D11
-  9: D50
-  10: D43
-  11: D0w0
+  0: D00
+  1: D40
+  2: D10
+  3: D20
