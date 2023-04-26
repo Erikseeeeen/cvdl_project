@@ -79,6 +79,6 @@ def xml_to_yolo(classes, folders):
 
 if __name__ == "__main__":
     classes = []
-    folders = ['China_Drone', 'Norway', 'China_MotorBike', 'Czech', 'India', 'Japan', 'United_States']
+    folders = ['China_Drone']#, 'Norway', 'China_MotorBike', 'Czech', 'India', 'Japan', 'United_States']
     # folders = ['Norway']
     xml_to_yolo(classes, folders)

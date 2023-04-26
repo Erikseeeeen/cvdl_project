@@ -26,7 +26,8 @@ def crop_norway_dataset():
     files = os.listdir(source_image_folder)
 
     for i, file in enumerate(files):
-        print(i)
+        if(i % 1000 == 0):
+            print(i)
         image_path = os.path.join(source_image_folder, file)
         if os.path.isfile(image_path):
             img = Image.open(image_path)

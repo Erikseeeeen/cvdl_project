@@ -13,18 +13,16 @@ def split_dataset(folders):
 
         image_files = os.listdir(source_folder_images)
         val_files_num = int(len(image_files) * 0.2) # Split dataset 80/20
-        print(val_files_num)
+        print(f'{val_files_num=}')
 
         for file in image_files[:val_files_num]:
             image_file_path = os.path.join(source_folder_images, file)
             if os.path.isfile(image_file_path):
                 shutil.move(image_file_path, dest_folder_images)
-                print(f"Moved {image_file_path} to {dest_folder_images}")
             
             label_file_path = os.path.join(source_folder_labels, file[:-4] + ".txt")
             if os.path.isfile(label_file_path):
                 shutil.move(label_file_path, dest_folder_labels)
-                print(f"Moved {label_file_path} to {dest_folder_labels}")
 
 
 if __name__ == "__main__":
