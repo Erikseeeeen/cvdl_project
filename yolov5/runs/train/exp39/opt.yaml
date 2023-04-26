@@ -1,6 +1,6 @@
 weights: yolov5s.pt
 cfg: ''
-data: /home/eivind/Documents/NTNU/cvdl/cvdl_project/yolov5/data/coco128.yaml
+data: C:\Users\Eivind\Documents\GitHub\cvdl_project\yolov5\data\rdd2022norway.yaml
 hyp:
   lr0: 0.01
   lrf: 0.1
@@ -17,22 +17,22 @@ hyp:
   iou_t: 0.2
   anchor_t: 4.0
   fl_gamma: 0.0
-  hsv_h: 0.1
-  hsv_s: 0.5
-  hsv_v: 0.5
+  hsv_h: 0
+  hsv_s: 0
+  hsv_v: 0
   degrees: 0.0
   translate: 0
-  scale: 0.2
+  scale: 0
   shear: 0
   perspective: 0.0
   flipud: 0.0
-  fliplr: 0.5
-  mosaic: 1.0
+  fliplr: 0.0
+  mosaic: 0.0
   mixup: 0.0
   copy_paste: 0.0
-epochs: 3
+epochs: 200
 batch_size: 16
-imgsz: 640
+imgsz: 2560
 rect: false
 resume: false
 nosave: false
@@ -49,7 +49,7 @@ single_cls: false
 optimizer: SGD
 sync_bn: false
 workers: 8
-project: runs/train
+project: runs\train
 name: exp
 exist_ok: false
 quad: false
@@ -65,4 +65,4 @@ entity: null
 upload_dataset: false
 bbox_interval: -1
 artifact_alias: latest
-save_dir: runs/train/exp39
+save_dir: runs\train\exp39

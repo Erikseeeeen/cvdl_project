@@ -2,7 +2,7 @@ import os
 import shutil
 
 # folders = ['China_Drone', 'China_MotorBike', 'Czech', 'India', 'Japan', 'United_States']
-folders = ['Norway_Cropped']
+folders = ['Norway']
 
 
 for folder in folders:
@@ -14,10 +14,11 @@ for folder in folders:
     os.makedirs(dest_folder_images)
     os.makedirs(dest_folder_labels)
 
-    # get a list of files in the source folder
     image_files = os.listdir(source_folder_images)
+    val_files_num = int(len(image_files) * 0.2) # Split dataset 80/20
+    print(val_files_num)
 
-    for file in image_files[:1600]:
+    for file in image_files[:val_files_num]:
         image_file_path = os.path.join(source_folder_images, file)
         if os.path.isfile(image_file_path):
             shutil.move(image_file_path, dest_folder_images)
