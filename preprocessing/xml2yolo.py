@@ -74,8 +74,7 @@ def xml_to_yolo(classes, folders):
                     f.write("\n".join(result))
 
     # generate the classes file as reference
-    with open('classes.txt', 'w', encoding='utf8') as f:
-        f.write(json.dumps(classes))
+    print(classes)
 
 if __name__ == "__main__":
     classes = []
