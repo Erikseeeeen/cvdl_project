@@ -9,3 +9,6 @@ yolov5/data/*
 !yolov5/data/hyps
 yolov5/data/hyps/*
 !yolov5/data/hyps/hyp.cracks.yaml
+
+
+*.pyc
