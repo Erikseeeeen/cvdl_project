@@ -1,5 +1,6 @@
 datasets/
 yolov5/*
+!yolov5/.comet.config
 !yolov5/runs
 !yolov5/data
 yolov5/data/*
